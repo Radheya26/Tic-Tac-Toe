@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  
+    <title></title>
+    
+  </head>
+  <body>
+  
+    <div class="background">
+      <div class="board">
+        <div class="item item1" onclick="add(1)"></div>
+        <div class="item item2" onclick="add(2)"></div>
+        <div class="item item3" onclick="add(3)"></div>
+        <div class="item item4" onclick="add(4)"></div>
+        <div class="item item5" onclick="add(5)"></div>
+        <div class="item item6" onclick="add(6)"></div>
+        <div class="item item7" onclick="add(7)"></div>
+        <div class="item item8" onclick="add(8)"></div>
+        <div class="item item9" onclick="add(9)"></div>
+      
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+<!--<script src="script.js"></script>
+    -->
+ <script>
+   class Game{
+  
+  play() {
+    }
+  update(input) {
+    
+     }
+  draw() {
+     }
+  
+}
+
+var current_sign = "X"
+
+var item1 = document.querySelector(".item1");
+var item2 = document.querySelector(".item2");
+var item3 = document.querySelector(".item3");
+var item4 = document.querySelector(".item4");
+var item5 = document.querySelector(".item5");
+var item6 = document.querySelector(".item6");
+var item7 = document.querySelector(".item7");
+var item8 = document.querySelector(".item8");
+var item9 = document.querySelector(".item9");
+
+
+
+function add(item_num){
+  items = [item1 , item2, item3 , item4 , item5 , item6 , item7 ,item8, item9]
+  
+  console.log(items[item_num-1])
+  if(current_sign=="X"){
+    items[item_num-1].innerHTML = "X";
+    current_sign = "0"
+  }
+  else{
+    items[item_num-1].innerHTML = "0"
+    current_sign = "X"
+  }
+  //console.log("fun run")
+  
+}
+//item1.addEventListener("click" , add());
+
+   
+    </script>
+  </body>
+</html>
